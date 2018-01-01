@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "mac",
       "size" : "16x16",
+      "idiom" : "mac",
+      "filename" : "图层-1.png",
       "scale" : "1x"
     },
     {
