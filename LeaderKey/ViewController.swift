@@ -16,24 +16,6 @@ class ViewController: NSViewController {
     // 所有的应用程序列表
     var appList:[AppItem]? = [AppItem]();
     
-    /**
- 
- if event.keyCode == 5 {
- self.openApp(app: "Google Chrome");
- } else if event.keyCode == 46 {
- self.openApp(app: "Mail");
- } else if event.keyCode == 18 {
- self.openApp(app: "DingTalk");
- } else if event.keyCode == 19 {
- self.openApp(app: "WeChat");
- } else if event.keyCode == 20 {
- self.openApp(app: "QQ");
- } else if event.keyCode == 1 {
- self.openApp(app: "SourceTree");
- } else if event.keyCode == 1 {
- self.openApp(app: "SourceTree");
- }*/
-    
     // 键值 与 具体应用的对应关系
     var keys:Dictionary<Int,String> = [
         5 : "Google Chrome",
