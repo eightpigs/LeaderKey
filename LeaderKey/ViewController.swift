@@ -35,6 +35,7 @@ class ViewController: NSViewController {
         14 : "Evernote",
         37 : "~/Downloads/",
         9 : "Vivaldi",
+        7 : "Xcode",
         27 : "System Preferences"
     ]
     
@@ -112,8 +113,13 @@ class ViewController: NSViewController {
     
     override func keyDown(with event: NSEvent) {
         print( "按的内容是：\(event.keyCode)  -   \(event)" )
-        let appName: String = keys[ event.keyCode.hashValue ] as! String;
-        openApp( app: appName );
+        
+        let keyCode = event.keyCode.hashValue
+        
+        if keys.index(forKey: keyCode) != nil {
+            let appName: String = keys[ keyCode ] as! String;
+            openApp( app: appName );
+        }
     }
     
     /**
