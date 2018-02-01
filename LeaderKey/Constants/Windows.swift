@@ -18,4 +18,4 @@ let BASE_WINDOW_HEIGHT = 500;
 let BG_COLOR: NSColor =  NSColor.init(red: 255, green: 255, blue: 255, alpha: 1);
 
 // 窗口的透明度
-let WINDOW_ALPHA: CGFloat = 0.94;
+let WINDOW_ALPHA: CGFloat = 0;

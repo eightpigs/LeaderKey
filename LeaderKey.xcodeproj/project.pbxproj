@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E53676442022A8FA00FD512E /* KeyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53676432022A8FA00FD512E /* KeyMonitor.swift */; };
+		E53676462022A9DA00FD512E /* KeyEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53676452022A9DA00FD512E /* KeyEventType.swift */; };
+		E53676482022B14600FD512E /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53676472022B14600FD512E /* Shell.swift */; };
 		E55EF46E1FFA2286005D3324 /* AppItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EF46D1FFA2286005D3324 /* AppItem.swift */; };
 		E55EF4701FFA7680005D3324 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EF46F1FFA7680005D3324 /* Preferences.swift */; };
 		E5AB4B1C1FFA067200A931A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AB4B1B1FFA067200A931A2 /* AppDelegate.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E53676432022A8FA00FD512E /* KeyMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyMonitor.swift; sourceTree = "<group>"; };
+		E53676452022A9DA00FD512E /* KeyEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyEventType.swift; sourceTree = "<group>"; };
+		E53676472022B14600FD512E /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		E55EF46D1FFA2286005D3324 /* AppItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppItem.swift; sourceTree = "<group>"; };
 		E55EF46F1FFA7680005D3324 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		E5AB4B181FFA067200A931A2 /* LeaderKey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaderKey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E536763C2022A8A800FD512E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E53676432022A8FA00FD512E /* KeyMonitor.swift */,
+				E53676452022A9DA00FD512E /* KeyEventType.swift */,
+				E53676472022B14600FD512E /* Shell.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		E55EF46C1FFA224E005D3324 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +116,7 @@
 		E5AB4B1A1FFA067200A931A2 /* LeaderKey */ = {
 			isa = PBXGroup;
 			children = (
+				E536763C2022A8A800FD512E /* Support */,
 				E55EF46C1FFA224E005D3324 /* Model */,
 				E5AB4B361FFA0E2800A931A2 /* Constants */,
 				E5AB4B1B1FFA067200A931A2 /* AppDelegate.swift */,
@@ -243,9 +260,12 @@
 			files = (
 				E55EF46E1FFA2286005D3324 /* AppItem.swift in Sources */,
 				E5AB4B421FFA0F0300A931A2 /* Windows.swift in Sources */,
+				E53676442022A8FA00FD512E /* KeyMonitor.swift in Sources */,
 				E55EF4701FFA7680005D3324 /* Preferences.swift in Sources */,
 				E5AB4B1E1FFA067200A931A2 /* ViewController.swift in Sources */,
 				E5AB4B1C1FFA067200A931A2 /* AppDelegate.swift in Sources */,
+				E53676482022B14600FD512E /* Shell.swift in Sources */,
+				E53676462022A9DA00FD512E /* KeyEventType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LeaderKey/LeaderKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GRXD8783ND;
@@ -389,7 +408,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = LeaderKey/LeaderKey.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GRXD8783ND;

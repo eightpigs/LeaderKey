@@ -33,7 +33,8 @@ class ViewController: NSViewController {
         0 : "Android Studio",
         8 : "Visual Studio Code",
         14 : "Evernote",
-        37 : "~/Downloads/",
+        37 : "/Users/ep/Downloads/",
+        41 : "/Users/ep/Documents/",
         9 : "Vivaldi",
         7 : "Xcode",
         27 : "System Preferences"
@@ -118,7 +119,7 @@ class ViewController: NSViewController {
         
         if keys.index(forKey: keyCode) != nil {
             let appName: String = keys[ keyCode ] as! String;
-            openApp( app: appName );
+            exec(name: appName)
         }
     }
     
@@ -152,9 +153,6 @@ class ViewController: NSViewController {
         }
     }
     
-    func openApp(app: String) {
-        NSWorkspace.shared.open(URL(fileURLWithPath: "/Applications/\(app).app"))
-    }
 }
 
 
